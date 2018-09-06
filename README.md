@@ -5,7 +5,7 @@
 
 ### 2. Before running
 
-1. move javagen.sh, seed file in your BRITE/bin directory
+1. move javagen.sh and seed file in your BRITE/bin directory
 
 2. in javagen.sh, 
   2.1 write in NEW_DIR your BRITE directory, e.g. NEW_DIR="~/BRITE "
