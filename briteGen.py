@@ -35,17 +35,10 @@ def briteGen(numVertex):
         for line in f:
             line_data = line.split()
             a = int(line_data[0])
-#            b = int(line_data[1])
-#            if (a > b):
-#                c = b
-#                b = a
-#                a = c
             coordinate_list[a] = float(line_data[1]), float(line_data[2])
 
-#    print('point list', points_list)
     max_value = points_list[0][0]
-#    print('max_value iniziale', max_value)
-#    print('len(points_list)', len(points_list))
+
 
     for row1 in range(len(points_list)):
         for col1 in range(2):
