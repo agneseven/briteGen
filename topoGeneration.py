@@ -11,7 +11,6 @@ class topoGeneration:
         self.bandwidth_list = bandwidth_list
         self.delay_list = delay_list
         self.coordinate_list = coordinate_list
-    #self.nSources = nSources
 
 
     def Graph(self):
@@ -22,7 +21,6 @@ class topoGeneration:
         for e in G.edges():
             G[e[0]][e[1]]['weight'] = self.bandwidth_list[e]
         G.add_nodes_from(self.coordinate_list.keys())
-        print(self.coordinate_list)
         #Just note that these positions won't be used as the position when drawing the graph, it has to be set explicitly.
         for n, p in self.coordinate_list.iteritems():
             G.node[n]['pos'] = p
@@ -31,8 +29,6 @@ class topoGeneration:
     def showGraph(self):
     # show graph in a Figure
         G = self.Graph()
-#        nodesList = list(range(0, self.nNodes))
-#        print(type(nodesList))
         pos = nx.spring_layout(G, 2, None,  self.coordinate_list)
         nx.draw_networkx_nodes(G,pos)
         nx.draw_networkx_edges(G,pos)

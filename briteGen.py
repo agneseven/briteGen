@@ -9,8 +9,8 @@ import sys
 def briteGen(numVertex):
     #generation of the topology
 #        subprocess.call(['./Users/Agnes/Documents/SLU_/brite_code/brite-patch-master/bin/javagen.sh'])
-    path="/Users/Agnes/Documents/SLU_/ML/cartellaProvaCodici/RLSimFlow_v4.0"
-    os.system("sh {}/brite-patch-master/bin/javagen.sh {}".format(path,numVertex))
+    path="path_directory"
+    os.system("sh {}/bin/javagen.sh {}".format(path,numVertex))
 
     points_list = []
     bandwidth_list = {}
@@ -19,7 +19,7 @@ def briteGen(numVertex):
         
 
 
-    with open(path+'/brite-patch-master/file_topo/edges_'+ str(numVertex) + '.txt', 'r') as f:
+    with open(path+'/file_topo/edges_'+ str(numVertex) + '.txt', 'r') as f:
         for line in f:
             line_data = line.split()
             a = int(line_data[0])
@@ -32,7 +32,7 @@ def briteGen(numVertex):
             delay_list[a, b] = float(line_data[2])
             bandwidth_list[a, b] = float(line_data[3])
 
-    with open(path+'/brite-patch-master/file_topo/coordinate_'+ str(numVertex) + '.txt', 'r') as f:
+    with open(path+'/file_topo/coordinate_'+ str(numVertex) + '.txt', 'r') as f:
         for line in f:
             line_data = line.split()
             a = int(line_data[0])
