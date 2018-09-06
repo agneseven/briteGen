@@ -8,8 +8,10 @@
 1. move javagen.sh and seed file in your BRITE/bin directory
 
 2. in javagen.sh, 
+  
   2.1 write in NEW_DIR your BRITE directory, e.g. NEW_DIR="~/BRITE "
-	2.2 substitute RTBarabasi.conf with the desired configuration. The following line create a new configuration file changing the number of nodes of the network. 
+  
+  2.2 substitute RTBarabasi.conf with the desired configuration. The following line create a new configuration file changing the number of nodes of the network. 
 
 > sed 's/N = 100/N = '${nodi}'/' $NEW_DIR/conf/RTBarabasi.conf > $NEW_DIR/configur/RTBarabasi${nodi}.conf
 
