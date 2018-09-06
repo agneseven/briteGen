@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 import sys
-#import EventManager2 as EM2
 
 #try:
 from topoGeneration import *
