@@ -27,4 +27,4 @@ where:
 
 > *Example*
 > 
-> ./test 10 ./coordinates_10_1.txt ./edges_10_1.txt ./bandwidth_10_1.txt ./delay_10_1.txt 1000 5 uniform uniform 3 3 uniform 3 100 0 1 50 0 exponential
+> .python sim.py 12
