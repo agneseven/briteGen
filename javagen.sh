@@ -1,17 +1,14 @@
 #!/bin/sh
 
-#$config=$1;
 nodi=$1;
 
 #set the BRITE directory
 NEW_DIR="/Users/Agnes/Documents/SLU_/ML/cartellaProvaCodici/RLSimFlow_v4.0/brite-patch-master"
 #move the seed_file generated to have a different topology every time. Comment it to have the same topology
 mv seed_file $NEW_DIR/bin
-#alias cdjava='. /scripts/cdjava'
 mkdir -p $NEW_DIR'/risultati'
 mkdir -p $NEW_DIR'/file_topo'
 mkdir -p $NEW_DIR'/configur'
-#str = 'N = ' + nodi
 sed 's/N = 100/N = '${nodi}'/' $NEW_DIR/conf/RTBarabasi.conf > $NEW_DIR/configur/RTBarabasi${nodi}.conf
 
 
