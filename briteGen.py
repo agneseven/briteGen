@@ -8,7 +8,6 @@ import sys
 
 def briteGen(numVertex):
     #generation of the topology
-#        subprocess.call(['./Users/Agnes/Documents/SLU_/brite_code/brite-patch-master/bin/javagen.sh'])
     path="path_directory"
     os.system("sh {}/bin/javagen.sh {}".format(path,numVertex))
 
