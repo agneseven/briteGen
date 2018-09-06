@@ -27,4 +27,4 @@ where:
 
 > *Example*
 > 
-> .python sim.py 12
+> python sim.py 12
