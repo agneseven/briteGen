@@ -1,7 +1,7 @@
 # briteGen
 ### 1. Prerequisites
 * python
-* [BRITE](https://www.cs.bu.edu/brite/)
+* [BRITE](https://github.com/nsol-nmsu/brite-patch)
 
 ### 2. Before running
 
